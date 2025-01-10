@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="plik.MainPage"
+             Title="">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+            <HorizontalStackLayout
+                HorizontalOptions="Center">
+            <Label
+                x:Name="lblMarkaModel"
+                FontSize="Header"
+                FontAttributes="Bold"
+                HorizontalTextAlignment="Center"
+                />
+            <Label
+                x:Name="lblId" 
+                IsVisible="False"
+                />
+            </HorizontalStackLayout>
+            <Image
+                x:Name="zdj"
+                />
+            <VerticalStackLayout>
+            <Label
+                x:Name="lblTekst"
+                HorizontalOptions="Center"
+                FontSize="Title"
+                />
+
+            <Label
+                x:Name="lblCena"
+                HorizontalOptions="Center"
+                FontSize="Title"
+                />
+            </VerticalStackLayout>
+            <HorizontalStackLayout
+                Spacing="500">
+                <Button
+                    x:Name="prev"
+                    HorizontalOptions="Start"
+                    Clicked="prevThing"
+                    Text="◀"
+                    />
+
+                <Button
+                    x:Name="next"
+                    HorizontalOptions="End"
+                    Clicked="nextThing"
+                    Text="▶"
+                    />
+            </HorizontalStackLayout>
+            
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
